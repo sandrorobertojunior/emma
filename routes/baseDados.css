@@ -1,0 +1,83 @@
+.main-base {
+  margin-top: 6rem;
+  width: 100%;
+  background-color: var(--fundo);
+  & h1 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 90rem;
+    font-size: 3rem;
+    color: var(--verde);
+    font-weight: 800;
+    position: relative;
+    top: -2rem;
+    margin-bottom: 5rem;
+  }
+
+  & .section-base {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    max-width: 120rem;
+    margin: 0 auto;
+    gap: 2.5rem;
+    padding-bottom: 2.5rem;
+    & .bloco {
+      border-radius: 2.5rem;
+      padding: 2.5rem;
+      width: 38rem;
+      height: 28rem;
+      background-color: #ffffff87;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column nowrap;
+      gap: 2.5rem;
+
+      & .h2 {
+        justify-self: flex-start;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: black;
+      }
+      & .texto {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: black;
+      }
+      & .container-botao {
+        align-self: flex-end;
+        width: 14.2rem;
+        height: 3.8rem;
+        background-color: var(--verde);
+        border-radius: 2.5rem;
+        border: none;
+        transition: 0.2s ease-in all;
+        & .button {
+          border: inherit;
+          border-radius: inherit;
+          background-color: inherit;
+          width: inherit;
+          height: inherit;
+          color: white;
+          font-weight: 900;
+          font-size: 1.3rem;
+          transition: 0.2s ease-in all;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+        }
+        &:hover {
+          & .button {
+            cursor: pointer;
+            color: black;
+            background-color: white;
+            border: solid 3px var(--verde);
+          }
+        }
+      }
+    }
+  }
+}

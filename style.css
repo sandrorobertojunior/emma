@@ -1,0 +1,142 @@
+:root {
+  --verde: #c67c63;
+  --fundo: #f2dfc7;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.header {
+  height: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.25rem solid black;
+  & .nav {
+    margin: 0 15rem 0 15rem;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & .logo {
+      color: var(--verde);
+      font-size: 4.8rem;
+      font-weight: 800;
+      width: 20rem;
+    }
+
+    & .ancoras {
+      margin: 0 2.5rem 0 2.5rem;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+      & a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 2.5rem;
+        transition: 0.2s ease-in all;
+        &:hover {
+          color: var(--verde);
+        }
+      }
+    }
+
+    & .botao-abrirModal {
+      border: none;
+      background-color: white;
+      width: 5rem;
+      transition: 0.2s ease-in all;
+      & .imagem {
+        color: var(--verde);
+        width: inherit;
+        height: inherit;
+      }
+      &:hover {
+        & .imagem {
+          background-color: var(--fundo);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  & .fundo-preto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.26);
+    z-index: 1;
+  }
+  & .nav2 {
+    position: absolute;
+    width: 52rem;
+    background-color: var(--verde);
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    & .bloco-nav2 {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 5rem;
+      & button {
+        width: inherit;
+        height: inherit;
+        align-self: end;
+        padding: 2.5rem 2.5rem 0 0;
+        border: none;
+        background-color: transparent;
+        font-size: 3rem;
+        color: white;
+        font-weight: 900;
+        transition: 0.2s ease-in all;
+        &:hover {
+          cursor: pointer;
+          color: black;
+        }
+      }
+      & a {
+        align-self: center;
+        font-weight: 900;
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        transition: 0.2s ease-in all;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.fechado {
+  display: none !important;
+}
+
+.body-modal-aberto {
+  overflow-y: hidden !important;
+}
+
+.pressionado-dentro-modal {
+  color: black !important;
+}
+
+.pressionado {
+  color: var(--verde) !important;
+}

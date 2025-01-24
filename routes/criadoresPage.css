@@ -1,0 +1,72 @@
+.main-criadores {
+  margin-top: 5rem;
+  width: 100%;
+  background-color: var(--fundo);
+  padding: 0 0 7.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & .secao-criadores {
+    width: 130rem;
+    display: flex;
+    flex-flow: row wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+    padding: 2.5rem 0 0 0;
+    & .bloco-criador {
+      width: 55rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      & .imagem-criador {
+        width: 33.6rem;
+        height: 45.6rem;
+        border-radius: 2.5rem;
+        background-image: url("../icons/criador4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: end;
+        & .bloco-texto {
+          border-bottom-left-radius: inherit;
+          border-bottom-right-radius: inherit;
+          background-color: #c67c63e5;
+          width: inherit;
+          height: 20rem;
+          padding: 0.5rem 1.5rem 0 1.5rem;
+          & .nome {
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+          }
+
+          & .tag-insta {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+          }
+
+          & .texto-sobre {
+            color: white;
+            font-size: 1.25rem;
+            word-break: break-all;
+          }
+        }
+      }
+      & .imagem-instagram {
+        width: 20rem;
+        height: 37.7rem;
+        border-radius: 2.5rem;
+        & img {
+          width: inherit;
+          height: inherit;
+          border-radius: inherit;
+        }
+      }
+    }
+  }
+}
