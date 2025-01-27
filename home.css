@@ -9,7 +9,7 @@
     flex-flow: row wrap;
     justify-content: center;
     & .video {
-      background-color: rgb(219, 213, 213);
+      background-color: rgba(219, 213, 213, 0);
       width: 83rem;
       height: 52rem;
     }
@@ -19,6 +19,12 @@
       border: solid 3rem var(--verde);
       width: 40.4rem;
       height: 38.2rem;
+
+       & p {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 3rem;
+       }
     }
   }
   & .section-inicio-sobrenos {
@@ -80,4 +86,26 @@
       }
     }
   }
+}
+
+.footer{
+  width: 100%;
+  height: 15rem;
+  background-color: var(--verde);
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+
+      & img{
+          max-width: 20rem;
+          height: 10rem;
+          margin-top: 3rem;
+      }
+
+      & p{
+          font-size: 2rem;
+          color: white;
+          font-weight: bold;
+          margin-top: 6rem;
+      }
 }
